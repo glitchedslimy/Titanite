@@ -1,0 +1,51 @@
+{
+    "name": "docs",
+    "$schema": "../../node_modules/nx/schemas/project-schema.json",
+    "root": "docs/titanite",
+    "sourceRoot": "docs/titanite/src",
+    "projectType": "application",
+    "targets": {
+        "serve": {
+            "executor": "nx:run-commands",
+            "options": {
+                "command": "astro dev",
+                "cwd": "docs/titanite"
+            }
+        },
+        "build": {
+            "executor": "nx:run-commands",
+            "options": {
+                "command": "astro build",
+                "cwd": "docs/titanite"
+            }
+        },
+        "preview": {
+            "executor": "nx:run-commands",
+            "options": {
+                "command": "astro preview",
+                "cwd": "docs/titanite"
+            }
+        },
+        "astro": {
+            "executor": "nx:run-commands",
+            "options": {
+                "command": "astro",
+                "cwd": "docs/titanite"
+            }
+        },
+        "lint": {
+            "executor": "nx:run-commands",
+            "options": {
+                "command": "",
+                "cwd": "docs/titanite"
+            }
+        },
+        "format": {
+            "executor": "nx:run-commands",
+            "options": {
+                "command": "",
+                "cwd": "docs/titanite"
+            }
+        }
+    }
+}

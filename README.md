@@ -1,5 +1,9 @@
 ![Titanite Banner](./assets/banner.png)
-<center>Always wondered how to forge a discord bot? Just use <b>Titanite</b>!</center>
+
+## About
+This repository is the main repository for the `Titanite` project. It contains multiple packages that will be sepparated in the releases of the project. You can find the Discord API wrapper in the `titanite` package.
+
+**Note**: This project is under construction, and it's not ready for production yet.
 
 ## Features
 - **Low Ram Usage & fast**: Titanite is designed to use the least amount of ram possible with the best performance.
@@ -12,10 +16,17 @@
 
 - **Customizable**: Titanite is designed to be customizable, with a lot of options to change the behavior of the bot.
 
+## Packages
+- `titanite`: The main package of the project, containing the Discord API wrapper.
+- `@forgify/titanite-nx-extensions`: A set of features to use with Nx, like a plugin to generate a new bot, and more to come.
+- `@forgify/titanite-bot`: A bot mostly for testing, but officially supported by the project.
+- `@forgify/docs`: The website of the project, containing the documentation and more.
+
 ## Installation
-```bash
-npm install titanite
-```
+Not available yet.
 
 ## Documentation
-To be made.
+Under construction.
+
+## Contributing
+We are not accepting contributions yet, but you can open an issue if you find a bug or have a feature request. Be sure to check if the bug/feature request doesn't exist already, take your time doing them and do them properly.
