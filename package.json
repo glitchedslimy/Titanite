@@ -1,0 +1,23 @@
+{
+  "name": "@forgify/titanite",
+  "version": "0.1.0",
+  "license": "MIT",
+  "scripts": {
+    "build": "nx run-many --all --target=build",
+    "lint": "nx run-many --all --target=lint",
+    "format": "nx run-many --all --target=format "
+  },
+  "private": true,
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "ws": "^8.16.0"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.5.3",
+    "@nx/js": "18.0.5",
+    "@types/node": "^20.11.20",
+    "@types/ws": "^8.5.10",
+    "nx": "18.0.5",
+    "tsx": "^4.7.1"
+  }
+}
