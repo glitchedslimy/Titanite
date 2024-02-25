@@ -1,7 +1,33 @@
 ---
 import Main from "../layouts/main.astro";
+import Button from "../components/button.astro";
+import Installation from "../components/installation.svelte";
 ---
 
 <Main title="Titanite ~ docs">
-	<section>Test</section>
+	<main class="text-center flex-col space-y-10 my-20">
+		<div
+			class="text-7xl font-black font-condensed italic antialiased tracking-tight mx-96 flex-col space-y-1"
+		>
+			<h1>The wrapper with</h1>
+			<h1>
+				<span class="text-primary">batteries</span> pre-forged
+			</h1>
+		</div>
+		<p class="text-xl mx-[35rem] text-white/50">
+			Titanite is the new way of forging discord bots, simple, fast and
+			highly customizable without loosing performance.
+		</p>
+		<div class="flex justify-center space-x-3">
+			<Button text="Docs" link="/" icon="notebook" iconPos="left" />
+			<Button
+				text="Github"
+				link="https://github.com/glitchedslimy/Titanite"
+				target="_blank"
+				secondary
+				external
+			/>
+		</div>
+		<Installation client:load />
+	</main>
 </Main>

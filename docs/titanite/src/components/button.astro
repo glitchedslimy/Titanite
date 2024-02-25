@@ -1,0 +1,32 @@
+---
+const { text, icon, link, external, iconPos, secondary, target } = Astro.props;
+---
+
+<a
+    href={link}
+    class={`${!secondary ? "overflow-hidden relative bg-primary text-black py-3 px-10 rounded-md font-semibold transition-all duration-500 hover:shadow-xl hover:shadow-[#000] border border-primary hover:-translate-y-[3px]" : "overflow-hidden relative hover:bg-primary text-primary hover:text-black  py-3 px-10 rounded-md font-semibold transition-all duration-500 hover:shadow-xl hover:shadow-[#000] border border-primary hover:-translate-y-[3px]"}`}
+    target={target}
+>
+    {
+        iconPos === "left" && (
+            <span>
+                <i class={`font-semibold ti ti-${icon} relative z-10`} />
+            </span>
+        )
+    }
+    <span class="relative z-10">{text}</span>
+    {
+        iconPos === "right" && (
+            <span>
+                <i class={`font-semibold ti ti-${icon} relative z-10`} />
+            </span>
+        )
+    }
+    {
+        external && !icon && !iconPos && (
+            <span>
+                <i class="ti ti-external-link font-semibold relative z-10" />
+            </span>
+        )
+    }
+</a>

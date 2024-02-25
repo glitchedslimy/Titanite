@@ -1,0 +1,46 @@
+---
+import { Image } from "astro:assets";
+import Logo from "../../public/assets/logo.svg";
+---
+
+<header
+    class="py-5 px-10 flex items-center top-0 w-full justify-between z-40 text-white"
+>
+    <div class="flex flex-grow basis-0">
+        <a href="/">
+            <Image src={Logo} width={40} height={40} alt="Titanite Logo" />
+        </a>
+    </div>
+    <nav class="">
+        <ul
+            class="flex [&>li>a]:duration-500 [&>li>a]:font-medium [&>li>a]:inline-block [&>li>a]:px-4 [&>li>a]:py-2"
+        >
+            <li class="hover:text-primary"><a href="/blog">Docs</a></li>
+            <li class="hover:text-primary">
+                <a href="/about">Philosophy</a>
+            </li>
+            <li class="hover:text-primary">
+                <a href="/about">About Titanite</a>
+            </li>
+            <li class="hover:text-primary"><a href="/blog">Pricing</a></li>
+        </ul>
+    </nav>
+    <nav class="flex flex-grow justify-end basis-0">
+        <ul
+            class="flex text-sm [&>li>a]:transition-colors [&>li>a]:duration-500 [&>li>a]:text-current [&>li>a]:font-medium [&>li>a]:inline-block [&>li>a]:px-4 [&>li>a]:py-2"
+        >
+            <li class="hover:text-primary">
+                <a
+                    href="https://github.com/glitchedslimy/Titanite"
+                    target="_blank"
+                    ><i class="ti ti-brand-github-filled text-xl"></i></a
+                >
+            </li>
+            <li class="hover:text-primary">
+                <a href="/"
+                    ><i class="ti ti-brand-discord-filled text-xl"></i></a
+                >
+            </li>
+        </ul>
+    </nav>
+</header>
