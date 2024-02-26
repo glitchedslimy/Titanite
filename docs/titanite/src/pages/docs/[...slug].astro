@@ -1,0 +1,24 @@
+---
+import DocsLayout from "../../layouts/docs.astro";
+
+export async function getStaticPaths() {
+    const posts = await Astro.glob("./docs/**/*.mdx");
+
+    return posts.map((post) => ({
+        params: {
+            slug: post.frontmatter.slug,
+        },
+        props: {
+            post,
+        },
+    }));
+}
+
+const { Content } = Astro.props.post;
+---
+
+<DocsLayout>
+    <div class="prose prose-white max-w-none">
+        <Content />
+    </div>
+</DocsLayout>

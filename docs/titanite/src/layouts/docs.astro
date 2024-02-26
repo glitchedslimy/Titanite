@@ -1,0 +1,13 @@
+---
+import Leftnav from "../components/leftnav.astro";
+import Main from "./main.astro";
+---
+
+<Main title="Titanite - Docs">
+    <main class="relative flex">
+        <Leftnav />
+        <div class="py-10">
+            <slot />
+        </div>
+    </main>
+</Main>

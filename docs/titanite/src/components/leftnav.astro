@@ -1,0 +1,6 @@
+---
+import Leftnavigation from "./leftnav.svelte";
+const post = await Astro.glob("../pages/docs/docs/**/*.mdx");
+---
+
+<Leftnavigation posts={post} client:visible />

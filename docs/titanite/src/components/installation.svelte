@@ -108,8 +108,10 @@
             ><i class="ti ti-brand-pnpm" /><span>pnpm</span></button
         >
     </div>
-    <div class="my-4 flex items-center justify-center space-x-5">
-        <pre><code class="language-bash">{@html highlightedCode}</code></pre>
+    <div class="my-4 flex items-center justify-center space-x-5 no-prose">
+        <pre class="no-prose"><code class="language-bash no-prose"
+                >{@html highlightedCode}</code
+            ></pre>
         <button
             on:click={() =>
                 copyToClipboard(() => showToast("Copied to clipboard!"))}

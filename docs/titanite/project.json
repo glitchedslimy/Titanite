@@ -4,6 +4,7 @@
     "root": "docs/titanite",
     "sourceRoot": "docs/titanite/src",
     "projectType": "application",
+    "type": "module",
     "targets": {
         "serve": {
             "executor": "nx:run-commands",

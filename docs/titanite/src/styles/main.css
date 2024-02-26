@@ -19,3 +19,9 @@
 html {
     font-family: 'Mona Sans', sans-serif;
 }
+
+.no-prose pre,
+.no-prose code {
+  padding: 0;
+  margin: 0;
+}
